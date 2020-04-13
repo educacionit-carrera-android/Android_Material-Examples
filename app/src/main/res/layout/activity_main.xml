@@ -61,5 +61,26 @@
             android:layout_marginTop="16dp"
             android:text="Snackbar" />
 
+        <Button
+            android:id="@+id/btnCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Card View" />
+
+        <Button
+            android:id="@+id/btnCardViewRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Card View Row" />
+
+        <Button
+            android:id="@+id/btnTextFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Text fields" />
+
     </LinearLayout>
 </ScrollView>

@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnToolbarNavigationView: Button
     private lateinit var btnFAB: Button
     private lateinit var btnSnackbar: Button
+    private lateinit var btnCardView: Button
+    private lateinit var btnCardViewRow: Button
+    private lateinit var btnTextFields: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +42,15 @@ class MainActivity : AppCompatActivity() {
 
         btnSnackbar = findViewById(R.id.btnSnackbar)
         btnSnackbar.setOnClickListener { startActivity(Intent(this, SnackbarActivity::class.java)) }
+
+        btnCardView = findViewById(R.id.btnCardView)
+        btnCardView.setOnClickListener { startActivity(Intent(this, CardViewActivity::class.java)) }
+
+        btnCardViewRow = findViewById(R.id.btnCardViewRow)
+        btnCardViewRow.setOnClickListener { startActivity(Intent(this, CardViewRowActivity::class.java)) }
+
+        btnTextFields = findViewById(R.id.btnTextFields)
+        btnTextFields.setOnClickListener { startActivity(Intent(this, TextFieldsActivity::class.java)) }
     }
 
 }
