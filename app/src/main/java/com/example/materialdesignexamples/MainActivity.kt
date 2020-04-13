@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnCardView: Button
     private lateinit var btnCardViewRow: Button
     private lateinit var btnTextFields: Button
+    private lateinit var btnAnimations: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +52,12 @@ class MainActivity : AppCompatActivity() {
 
         btnTextFields = findViewById(R.id.btnTextFields)
         btnTextFields.setOnClickListener { startActivity(Intent(this, TextFieldsActivity::class.java)) }
+
+        btnAnimations = findViewById(R.id.btnAnimations)
+        btnAnimations.setOnClickListener {
+            startActivity(Intent(this, AnimationsActivity::class.java))
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
     }
 
 }
